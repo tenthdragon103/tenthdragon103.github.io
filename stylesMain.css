@@ -1,0 +1,65 @@
+body {
+  background-color: white;
+  font-size: 100%;
+}
+h1 {
+  color: black;
+}
+p {
+  color: white;
+}
+nav {
+  color: black;
+  background-color: lightgrey;
+  display: flex;
+  align-items: stretch;
+  border: 1px solid black;
+  font-family: "Lucida Console", monospace;
+  font-size: 20px;
+}
+.navdiv1 {
+  align-items: center;
+  height: 40px;
+  width: 30%;
+  display: inline-block;
+  line-height: 200%;
+  margin-left: 4px;
+}
+.navdiv2 {
+  width: 40%;
+  height: 40px;
+  text-align: center;
+  display: inline-block;
+  line-height: 200%;
+}
+.navdiv3 {
+  height: 40px;
+  width: 30%;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  line-height: 200%;
+}
+.plusImg {
+  width: 30px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  display: flex;
+  align-items: center;
+  padding-right: 5px;
+}
+.usrNameButton {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  font-family: "Lucida Console", monospace;
+  font-size: 20px;
+}
