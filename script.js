@@ -1,20 +1,25 @@
-function getUsrInfo() {
-    //whoami
-    //create thingy that goes down and says:
-    //Your Information
-    //email
-    //user ID
-    //ip
-    //logout
-    document.getElementById("userdropdown").classList.toggle("show");
-}
+// JavaScript to toggle the rotation and dropdown
+document.addEventListener("DOMContentLoaded", function () {
+    const plusButton = document.getElementById("plusButton");
+    const dropdown = document.getElementById("userdropdown");
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-    if (!e.target.matches('.usrNameButton')) {
-        var myDropdown = document.getElementById("userdropdown");
-        if (myDropdown.classList.contains('show')) {
-            myDropdown.classList.remove('show');
+    // Toggle the rotation and dropdown visibility
+    plusButton.addEventListener("click", function (event) {
+        // Toggle the "active" class to rotate the vertical line
+        plusButton.classList.toggle("active");
+
+        // Toggle dropdown visibility
+        dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+
+        // Prevent click from propagating
+        event.stopPropagation();
+    });
+
+    // Close dropdown when clicking anywhere else
+    document.addEventListener("click", function (event) {
+        if (!plusButton.contains(event.target) && !dropdown.contains(event.target)) {
+            dropdown.style.display = "none";
+            plusButton.classList.remove("active"); // Reset the plus sign
         }
-    }
-}
+    });
+});

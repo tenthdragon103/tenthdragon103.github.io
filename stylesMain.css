@@ -1,152 +1,118 @@
-body {
-    background-color: white;
-    font-size: 100%;
-}
-h1 {
-    color: black;
-}
-p {
-    color: white;
-}
+/* Navbar */
 nav {
-    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures left, center, right layout */
     background-color: lightgrey;
-    display: flex;
-    align-items: stretch;
     border: 1px solid black;
-    font-family: "Lucida Console", monospace;
     font-size: 20px;
+    padding: 10px;
+    flex-wrap: nowrap;
 }
+
+/* Left side - Site title */
 .navdiv1 {
+    flex: 1; /* Takes up available space */
+    display: flex;
     align-items: center;
-    height: 40px;
-    width: 30%;
-    display: inline-block;
-    line-height: 200%;
-    margin-left: 4px;
+    font-weight: bold;
+    padding-right: 5%;
 }
+
+/* Center - "Main" */
 .navdiv2 {
-    width: 40%;
-    height: 40px;
+    flex: 0; /* Takes only as much space as needed */
     text-align: center;
-    display: inline-block;
-    line-height: 200%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
+
+/* Right side - Plus Image & User */
 .navdiv3 {
-    height: 40px;
-    width: 30%;
-    text-align: right;
+    flex: 1; /* Takes up available space */
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    line-height: 200%;
-}
-.plusImg {
-    width: 30px;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-    display: flex;
-    align-items: center;
-    padding-right: 5px;
-}
-.usrNameButton {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    font-family: "Lucida Console", monospace;
-    font-size: 20px;
+    justify-content: flex-end; /* Pushes everything to the far right */
+    gap: 5px;
+    padding-left: 5%;
 }
 
-
-/* username dropdown box */
-.show {
-    visibility: visible !important;
-    opacity: 1 !important;
-}
-.dropdown {
-    float: left;
-    overflow: hidden;
+/* Responsive layout for small screens */
+@media (max-width: 500px) {
+    nav {
+        flex-direction: row;
+    }
 }
 
-.dropdown .dropbtn {
-    cursor: pointer;
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-
+/* Ensure dropdown is properly positioned */
 .dropdown-content {
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.2s ease-in-out;
+    display: none; /* Hide by default */
     position: absolute;
-    background-color: #f9f9f9;
+    right: 0; /* Aligns it to the right */
+    background-color: white;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    border: 1px solid black;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    padding: 5px 0;
 }
 
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
+/* Dropdown items */
+.dropdown-content a,
 .dropdown-content p {
-    float: none;
+    display: block;
     color: black;
-    padding: 12px 16px;
     text-decoration: none;
-    display: block;
+    padding: 10px 15px;
     text-align: left;
+    white-space: nowrap; /* Prevents text wrapping */
 }
 
-
-/* admin only userdata table */
-.user-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.user-table th, .user-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-}
-
-.user-table th {
-    background-color: #f2f2f2;
-}
-
-.user-table tbody {
+/* Show dropdown when active */
+.navdiv3:hover .dropdown-content {
     display: block;
-    max-height: 400px;
-    overflow-y: auto;
-    overflow-x: hidden;
 }
 
-.user-table thead, .user-table tbody tr {
-    display: table;
-    width: 100%;
-    table-layout: fixed;
+.dropdown.no-hover .dropdown-content {
+    display: none !important;
 }
 
-.user-table tbody td {
-    word-wrap: break-word;
+/* Button styling */
+.plus-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    position: relative;
 }
+
+/* Elliptical shapes (lines of the plus sign) */
+.plus-button .line {
+    position: absolute;
+    background-color: black;
+    border-radius: 50%; /* Makes the shapes elliptical */
+    transition: transform 0.3s ease;
+}
+
+/* Horizontal line */
+.plus-button .horizontal {
+    width: 20px;
+    height: 4px;
+}
+
+/* Vertical line */
+.plus-button .vertical {
+    width: 4px;
+    height: 20px;
+    transform: rotate(0deg); /* Initial state */
+}
+
+/* Rotate the vertical line by 90 degrees when the button is active */
+.plus-button.active .vertical {
+    transform: rotate(90deg);
 }
