@@ -1,8 +1,7 @@
-/* Navbar */
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Ensures left, center, right layout */
+    justify-content: space-between;
     background-color: lightgrey;
     border: 1px solid black;
     font-size: 20px;
@@ -10,45 +9,72 @@ nav {
     flex-wrap: nowrap;
 }
 
-/* Left side - Site title */
+/* Dark Mode for nav */
+body.dark nav {
+    background-color: #313131;
+    border: 1px solid white;
+}
+
 .navdiv1 {
-    flex: 1; /* Takes up available space */
+    flex: 1;
     display: flex;
     align-items: center;
     font-weight: bold;
     padding-right: 5%;
 }
 
-/* Center - "Main" */
+/* Dark Mode for navdiv1 */
+body.dark .navdiv1 {
+    color: white;
+}
+
 .navdiv2 {
-    flex: 0; /* Takes only as much space as needed */
+    flex: 0;
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
 }
 
-/* Right side - Plus Image & User */
+/* Dark Mode for navdiv2 */
+body.dark .navdiv2 {
+    color: white;
+}
+
 .navdiv3 {
-    flex: 1; /* Takes up available space */
+    flex: 1;
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* Pushes everything to the far right */
+    justify-content: flex-end;
     gap: 5px;
     padding-left: 5%;
 }
 
-/* Responsive layout for small screens */
+/* Dark Mode for navdiv3 */
+body.dark .navdiv3 {
+    color: white;
+}
+
 @media (max-width: 500px) {
     nav {
         flex-direction: row;
     }
 }
 
-/* Ensure dropdown is properly positioned */
+body {
+    background-color: white;
+    color: black;
+    transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+    background-color: #121212;
+    color: white;
+}
+
 .dropdown-content {
-    display: none; /* Hide by default */
+    display: none;
     position: absolute;
-    right: 0; /* Aligns it to the right */
+    right: 0;
     background-color: white;
     min-width: 160px;
     border: 1px solid black;
@@ -57,27 +83,40 @@ nav {
     padding: 5px 0;
 }
 
-/* Dropdown items */
+/* Dark Mode for dropdown-content */
+body.dark .dropdown-content {
+    background-color: #1a1a1a;
+    border: 1px solid white;
+    box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.2);
+}
+
 .dropdown-content a,
+.dropdown-content button,
 .dropdown-content p {
     display: block;
     color: black;
     text-decoration: none;
     padding: 10px 15px;
     text-align: left;
-    white-space: nowrap; /* Prevents text wrapping */
+    white-space: nowrap;
 }
 
-/* Show dropdown when active */
-.navdiv3:hover .dropdown-content {
-    display: block;
+/* Dark Mode for dropdown-content elements */
+body.dark .dropdown-content a,
+body.dark .dropdown-content button,
+body.dark .dropdown-content p {
+    color: white;
+    background: #1a1a1a;
+}
+
+.navdiv3 .dropdown-content {
+    display: none;
 }
 
 .dropdown.no-hover .dropdown-content {
     display: none !important;
 }
 
-/* Button styling */
 .plus-button {
     background: none;
     border: none;
@@ -91,28 +130,34 @@ nav {
     position: relative;
 }
 
-/* Elliptical shapes (lines of the plus sign) */
+/* Dark Mode for plus-button */
+body.dark .plus-button {
+    background: none;
+}
+
 .plus-button .line {
     position: absolute;
     background-color: black;
-    border-radius: 50%; /* Makes the shapes elliptical */
+    border-radius: 50%;
     transition: transform 0.3s ease;
 }
 
-/* Horizontal line */
+/* Dark Mode for plus-button lines */
+body.dark .plus-button .line {
+    background-color: white;
+}
+
 .plus-button .horizontal {
     width: 20px;
     height: 4px;
 }
 
-/* Vertical line */
 .plus-button .vertical {
     width: 4px;
     height: 20px;
-    transform: rotate(0deg); /* Initial state */
+    transform: rotate(0deg);
 }
 
-/* Rotate the vertical line by 90 degrees when the button is active */
 .plus-button.active .vertical {
     transform: rotate(90deg);
 }

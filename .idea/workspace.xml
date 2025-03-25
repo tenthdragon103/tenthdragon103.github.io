@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d63333e-f2dc-4a74-97fd-6967c9756ac9" name="Changes" comment="wip">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wtjdabot.html" afterDir="false" />
+    <list default="true" id="9d63333e-f2dc-4a74-97fd-6967c9756ac9" name="Changes" comment="edited notice and about me and forgot to add image file">
+      <change afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/showcases.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plusSign.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/navdropdown.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stylesMain.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesMain.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wtjdabot.html" beforeDir="false" afterPath="$PROJECT_DIR$/wtjdabot.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +79,9 @@
       <workItem from="1742362615359" duration="1021000" />
       <workItem from="1742364209471" duration="111000" />
       <workItem from="1742426899923" duration="186000" />
-      <workItem from="1742710349914" duration="9457000" />
+      <workItem from="1742710349914" duration="9666000" />
+      <workItem from="1742765202918" duration="445000" />
+      <workItem from="1742868114177" duration="14704000" />
     </task>
     <task id="LOCAL-00001" summary="base page">
       <option name="closed" value="true" />
@@ -112,7 +115,23 @@
       <option name="project" value="LOCAL" />
       <updated>1742364309995</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fixed dropdown, added new page, added text">
+      <option name="closed" value="true" />
+      <created>1742720037531</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1742720037531</updated>
+    </task>
+    <task id="LOCAL-00006" summary="edited notice and about me and forgot to add image file">
+      <option name="closed" value="true" />
+      <created>1742765644156</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1742765644156</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +141,8 @@
     <MESSAGE value="base page" />
     <MESSAGE value="wip message" />
     <MESSAGE value="wip" />
-    <option name="LAST_COMMIT_MESSAGE" value="wip" />
+    <MESSAGE value="fixed dropdown, added new page, added text" />
+    <MESSAGE value="edited notice and about me and forgot to add image file" />
+    <option name="LAST_COMMIT_MESSAGE" value="edited notice and about me and forgot to add image file" />
   </component>
 </project>

@@ -3,6 +3,27 @@ document.addEventListener("DOMContentLoaded", function () {
     const plusButton = document.getElementById("plusButton");
     const dropdown = document.getElementById("userdropdown");
 
+    const toggleButton = document.getElementById("darkModeToggle");
+    const body = document.body;
+
+
+    // Check localStorage for saved mode
+    if (localStorage.getItem("darkMode") === "enabled") {
+        body.classList.add("dark");
+    }
+
+    // Toggle dark mode on button click
+    toggleButton.addEventListener("click", function () {
+        body.classList.toggle("dark");
+
+        // Save user preference in localStorage
+        if (body.classList.contains("dark")) {
+            localStorage.setItem("darkMode", "enabled");
+        } else {
+            localStorage.setItem("darkMode", "disabled");
+        }
+    });
+
     // Toggle the rotation and dropdown visibility
     plusButton.addEventListener("click", function (event) {
         // Toggle the "active" class to rotate the vertical line

@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesMain.css">
+    <link rel="stylesheet" href="showcases.css">
+    <script src="navdropdown.js"></script>
+    <title>Projects</title>
+</head>
+<body>
+<div class="main">
+    <nav>
+        <div class="navdiv1">
+            tenthdragon103.github.io/projects
+        </div>
+        <div class="navdiv2">
+            Projects
+        </div>
+        <div class="navdiv3">
+            <div class="dropdown">
+                <button class="plus-button" id="plusButton">
+                    <div class="line horizontal"></div>
+                    <div class="line vertical"></div>
+                </button>
+                <div class="dropdown-content" id="userdropdown">
+                    <a onclick="history.back()">Back</a>
+                    <a href="index.html">Main page</a>
+                    <a href="about.html">About Me</a>
+                    <a href="wtjdabot.html">Biggest Project</a>
+                    <button id="darkModeToggle" class="toggle-btn">Toggle Dark Mode</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="grid-container">
+        <div class="box">
+            <h3>TStaffMode</h3>
+            <p>Github description: A Minecraft Spigot plugin to save a staff member's inventory to a secure, crash proof, file and return items upon exiting staff mode. <a href="https://github.com/tenthdragon103/staffMode10/wiki">Wiki</a></p>
+
+            <img src="staffcmds.png">
+        </div>
+        <div class="box">
+            <h3>Risk Level Manager</h3>
+            <p>Github description: Minecraft Spigot plugin for staff to record and set a player's risk level and monitor activity.</p>
+            <img src="playerrisk.png">
+        </div>
+        <div class="box">
+            <h3>Custom Book Json</h3>
+            <p>Github description: Minecraft Spigot plugin to create and give written books with custom JSON data, use a book command creator and take the json and use it here.</p>
+            <img src="jsonbook.png">
+        </div>
+        <div class="box">
+            <h3>No Bad Recipes</h3>
+            <p>Github description: A Minecraft Paper plugin to detect if players put in a weird crafting recipe such as a backwards axe. On crafting the item the plugin will publicly shame the player and optionally ban them.</p>
+        </div>
+        <div class="box">
+            <h3>Assembly Printing</h3>
+            <p>This was just a test project to try to figure out assembly, it is very basic and doesn't compile properly on FASM because the kernel libraries dont import.</p>
+            <img src="printasm.png">
+        </div>
+        <div class="box">
+            <h3>Procedural Animation</h3>
+            <p>This is a screenshot of my procedural animation project in Unity using C#, I created an army of spiders like this one to follow the player using realistic movement and contact with the ground.</p>
+            <img src="animatedspider.png">
+        </div>
+    </div>
+</div>
+</body>
+</html>
