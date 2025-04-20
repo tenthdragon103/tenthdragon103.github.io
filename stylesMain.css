@@ -25,7 +25,7 @@ body.dark nav {
 
 /* Dark Mode for navdiv1 */
 body.dark .navdiv1 {
-    color: white;
+    color: #DDDDD;
 }
 
 .navdiv2 {
@@ -37,7 +37,7 @@ body.dark .navdiv1 {
 
 /* Dark Mode for navdiv2 */
 body.dark .navdiv2 {
-    color: white;
+    color: #DDDDD;
 }
 
 .navdiv3 {
@@ -51,7 +51,7 @@ body.dark .navdiv2 {
 
 /* Dark Mode for navdiv3 */
 body.dark .navdiv3 {
-    color: white;
+    color: #DDDDD;
 }
 
 @media (max-width: 500px) {
@@ -68,7 +68,7 @@ body {
 
 body.dark {
     background-color: #121212;
-    color: white;
+    color: #DDDDD;
 }
 
 .dropdown-content {
