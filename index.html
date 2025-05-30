@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="stylesMain.css">
     <script src="navdropdown.js"></script>
     <title>Main Page</title>
 </head>
 <body>
-<div class="main">
+<div class="main-container">
     <nav>
         <div class="navdiv1">
             tenthdragon103.github.io
@@ -33,56 +33,89 @@
             </div>
         </div>
     </nav>
-    <h3>Notice and Authorship</h3>
-    <p>
-        This website is written and maintained by Tenthdragon103 for my LinkedIn profile. To maintain my anonymity for safety reasons, I use my common username rather than my real name and
-        will not provide personal contact information. Additionally, GitHub Pages only supports static deployments. So until I can rent a server, this page is limited to basic functions,
-        and I cannot do things like sign-ins, cookies, databases, or PHP scripts. For now, this website serves as a portfolio to showcase my work and skills.
-    </p>
-    <h3>About Me in CS</h3>
-    <p>
-        I was first introduce to computers and programming at 7, when I wrote my first HTML and Scratch code. Around 8 I experimented with a Java learning course, which became my favorite
-        language. I used my experience in my elementary school robotics club, where I programmed our bot to respond to our user inputs. In highschool I became more interested in creating
-        larger and more complex programs than I had before, teaching myself concepts only taught in calculus 3 or higher, and learning formulas for my attempt at creating a 3D animation
-        engine. Needless to say the project failed because I tried doing graphics in Java with AWT. However, it only made me want to keep going, so I kept creating new things with different
-        styles and languages. See full About Me page <a href="about.html">here</a>.
-    </p>
-    <h3>Current Projects</h3>
-    <p>
-        Source code can be found on my <a href="https://github.com/tenthdragon103">GitHub</a> where I keep up with active projects. Unfortunately some of my older code doesn't exist anymore
-        because of things like resets or account loss, so I don't have my old Scratch games or Java programs. My largest and most difficult project to date is my
-        <a href="wtjdabot.html">War Thunder chat bridge</a>. I also have a list and description of some other projects <a href="projects.html">here</a>.
-    </p>
-    <h3>Language Experiences</h3>
-    <h5>Listed by my fluency and confidence in writing.</h5>
-    <ul>
-        <li>BEST</li>
-        <ul>
-            <li>Java</li>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-        </ul>
-        <li>Good</li>
-        <ul>
-            <li>C++</li>
-            <li>C#</li>
-            <li>Python</li>
-        </ul>
-        <li>Okay</li>
-        <ul>
-            <li>Bash</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>PHP</li>
-            <li>SQL</li>
-            <li>Lua</li>
-        </ul>
-        <li>Needs work</li>
-        <ul>
-            <li>C</li>
-            <li>x86-64</li>
-        </ul>
-    </ul>
+
+    <main class="content-wrapper">
+        <section class="content-section">
+            <h3>Notice and Authorship</h3>
+            <p>
+                This website is written and maintained by Tenthdragon103 for my LinkedIn profile. To maintain my anonymity
+                for safety reasons, I use my common username rather than my real name and will not provide personal contact
+                information. Additionally, GitHub Pages only supports static deployments. So until I can rent a server, this
+                page is limited to basic functions, and I cannot do things like sign-ins, cookies, databases, or PHP scripts.
+                For now, this website serves as a portfolio to showcase my work and skills.
+            </p>
+        </section>
+
+        <section class="content-section">
+            <h3>About Me in CS</h3>
+            <p>
+                I was first introduced to computers and programming at 7, when I wrote my first HTML and Scratch code.
+                Around 8 I experimented with a Java learning course, which became my favorite language. I used my experience
+                in my elementary school robotics club, where I programmed our bot to respond to our user inputs.
+            </p>
+            <p>
+                In high school I became more interested in creating larger and more complex programs than I had before,
+                teaching myself concepts only taught in calculus 3 or higher, and learning formulas for my attempt at
+                creating a 3D animation engine. Needless to say the project failed because I tried doing graphics in Java
+                with AWT. However, it only made me want to keep going, so I kept creating new things with different styles
+                and languages. See full About Me page <a href="about.html">here</a>.
+            </p>
+        </section>
+
+        <section class="content-section">
+            <h3>Current Projects</h3>
+            <p>
+                Source code can be found on my <a href="https://github.com/tenthdragon103">GitHub</a> where I keep up with
+                active projects. Unfortunately some of my older code doesn't exist anymore because of things like resets or
+                account loss, so I don't have my old Scratch games or Java programs.
+            </p>
+            <p>
+                My largest and most difficult project to date is my <a href="wtjdabot.html">War Thunder chat bridge</a>.
+                I also have a list and description of some other projects <a href="projects.html">here</a>.
+            </p>
+        </section>
+
+        <section class="content-section">
+            <h3>Language Experiences</h3>
+            <h5>Listed by my fluency and confidence in writing.</h5>
+            <div class="language-grid">
+                <div class="language-category">
+                    <h4>BEST</h4>
+                    <ul>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                    </ul>
+                </div>
+                <div class="language-category">
+                    <h4>Good</h4>
+                    <ul>
+                        <li>C++</li>
+                        <li>C#</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+                <div class="language-category">
+                    <h4>Okay</h4>
+                    <ul>
+                        <li>Bash</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>PHP</li>
+                        <li>SQL</li>
+                        <li>Lua</li>
+                    </ul>
+                </div>
+                <div class="language-category">
+                    <h4>Needs work</h4>
+                    <ul>
+                        <li>C</li>
+                        <li>x86-64</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
 </div>
 </body>
 </html>

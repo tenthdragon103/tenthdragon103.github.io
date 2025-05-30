@@ -33,10 +33,9 @@
             </div>
         </div>
     </nav>
-    <h3>Most recent update as of push date</h3>
-    <img src="packagedBot.png" alt="wtjdabot.jar file">
-    <p>This contains all the necessary files to set up and run the bot. jdawtbot contains around 1600 lines of code, and on my PC consumes about 2% CPU and 60MB allocated heap at peak
-    usage.</p>
+    <p>
+        The project contains around 7000 lines of code, and on my PC consumes about 7% CPU and 60MB allocated heap at peak usage, and is about 881 MB in size.
+    </p>
     <h3>Creation</h3>
     <p>
         A chat bridge is a popular tool for Minecraft servers, it allows users from Discord to talk to players in-game. A chat bridge on Minecraft is no easy feat, but unlike War Thunder,
@@ -45,6 +44,16 @@
         and creating safeties and checks. Since War Thunder doesn't have APIs or support external plugins, I had to define how to send messages to the game posing as a player, and do other
         functions autonomously, as well as create commands for moderators on Discord to watch the players and make sure they behave and step in if needed. This of course was only a small small
         part of the whole bot, there are many other features.
+    </p>
+    <p>
+        After about 13 version releases of the project I created v2.0.0, where I integrated a website to control features that would otherwise only be accessible by complicated discord commands.
+        The website uses the bot to link user's discord accounts and derive from that their level of permissions and what features to display. I wanted to create a site with the strongest possible
+        security, so I had to figure out how to tokenize logins and create an API to protect my database, verify token validity and staleness, and sanitize potential malicious inputs. Also using
+        the tokens I was able to sign them to users and decode them in my API to minimize database querying and streamline usage, preventing the possible replication of tokens or decoding.
+    </p>
+    <p>
+        Now the bot has reached version 2.2.11 where I created Discord slash command integration for purposes such as moderation on all sides, creating an all-in-one bot comparable to even the largest
+        and widely used Discord tools available.
     </p>
 </div>
 </body>

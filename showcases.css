@@ -9,7 +9,7 @@
 }
 
 .box {
-    background: #f5f5f5;
+    background: lightgrey;
     border-radius: 8px;
     padding: 30px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
