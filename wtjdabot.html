@@ -27,34 +27,93 @@
                     <a onclick="history.back()">Back</a>
                     <a href="index.html">Main page</a>
                     <a href="about.html">About Me</a>
+                    <a href="CVEReport.html">CVE Report</a>
+                    <a href="tencryption.html">Tencryption</a>
                     <a href="projects.html">Other Projects</a>
                     <button id="darkModeToggle" class="toggle-btn">Toggle Dark Mode</button>
                 </div>
             </div>
         </div>
     </nav>
-    <p>
-        The project contains around 7000 lines of code, and on my PC consumes about 7% CPU and 60MB allocated heap at peak usage, and is about 881 MB in size.
-    </p>
-    <h3>Creation</h3>
-    <p>
-        A chat bridge is a popular tool for Minecraft servers, it allows users from Discord to talk to players in-game. A chat bridge on Minecraft is no easy feat, but unlike War Thunder,
-        Minecraft has APIs and plugins. I had to be the first to figure out how to interact with the game, how to get data from its undocumented ports, how to write to it. The discord side
-        of things was relatively easy, as JDA (Java Discord Api) is well documented and used, but along with that came other issues of managing threads and preventing breakdown of the program
-        and creating safeties and checks. Since War Thunder doesn't have APIs or support external plugins, I had to define how to send messages to the game posing as a player, and do other
-        functions autonomously, as well as create commands for moderators on Discord to watch the players and make sure they behave and step in if needed. This of course was only a small small
-        part of the whole bot, there are many other features.
-    </p>
-    <p>
-        After about 13 version releases of the project I created v2.0.0, where I integrated a website to control features that would otherwise only be accessible by complicated discord commands.
-        The website uses the bot to link user's discord accounts and derive from that their level of permissions and what features to display. I wanted to create a site with the strongest possible
-        security, so I had to figure out how to tokenize logins and create an API to protect my database, verify token validity and staleness, and sanitize potential malicious inputs. Also using
-        the tokens I was able to sign them to users and decode them in my API to minimize database querying and streamline usage, preventing the possible replication of tokens or decoding.
-    </p>
-    <p>
-        Now the bot has reached version 2.2.11 where I created Discord slash command integration for purposes such as moderation on all sides, creating an all-in-one bot comparable to even the largest
-        and widely used Discord tools available.
-    </p>
+
+    <main class="content-wrapper">
+        <section class="content-section">
+            <h3>Creation</h3>
+            <p>
+                A chat bridge is a popular tool for Minecraft servers, it allows users from Discord to talk to players in-game. A chat bridge on Minecraft is no easy feat, but unlike War Thunder,
+                Minecraft has APIs and plugins. I had to be the first to figure out how to interact with the game, how to get data from its undocumented ports, how to write to it. The discord side
+                of things was relatively easy, as JDA (Java Discord Api) is well documented and used, but along with that came other issues of managing threads and preventing breakdown of the program
+                and creating safeties and checks. Since War Thunder doesn't have APIs or support external plugins, I had to define how to send messages to the game posing as a player, and do other
+                functions autonomously, as well as create commands for moderators on Discord to watch the players and make sure they behave and step in if needed. This of course was only a small small
+                part of the whole bot, there are many other features.
+            </p>
+            <p>
+                After about 13 version releases of the project I created v2.0.0, where I integrated a website to control features that would otherwise only be accessible by complicated discord commands.
+                The website uses the bot to link user's discord accounts and derive from that their level of permissions and what features to display. I wanted to create a site with the strongest possible
+                security, so I had to figure out how to tokenize logins and create an API to protect my database, verify token validity and age, and sanitize potential malicious inputs. Also using
+                the tokens I was able to sign them to users and decode them in my API to minimize database querying and streamline usage, preventing the possible replication of tokens or decoding.
+            </p>
+            <p>
+                Now the project is version 2.2.3, refactoring code for readability, efficiency, disk size, and better modularity for adding new code.
+            </p>
+        </section>
+        <section class="content-section">
+            <h3>Statistics</h3>
+            <p>
+                The majority of the project excluding packages and XAMPP is java, having 76 classes and interfaces. The project uses about 7% of my CPU and 60MB memory at peak usage. It takes up about 707MB disk size, a notable improvement over the previous version's 881MB.
+            </p>
+            <pre>
+                <code>
+github.com/AlDanial/cloc v 2.06
+-----------------------------------------------------------------------------------
+Language                         files          blank        comment           code
+-----------------------------------------------------------------------------------
+PHP                               3596          82701         232447         473477
+HTML                               387           8984           1890          95778
+JavaScript                         216          11591          24717          94855
+Text                               158          17314              0          80940
+CSS                                 42           2162           4261          18119
+Twig                               270           1164            173          18108
+JSON                                84              3              0          18074
+SCSS                                78           3730            523          16934
+C/C++ Header                       142           5196          27977          14195
+INI                                  9           3934           1703          14112
+XML                                147            863           2092          13977
+Pascal                              25           1157            869          10895
+Java                               161           2323           2359          10406
+SVG                                104             25             48           7448
+Markdown                            76           2115              0           6019
+reStructuredText                    24           3366           3790           3457
+Delphi Form                          9              2           3188           2959
+XSLT                                20            412            120           2644
+JSP                                 60            320            974           2441
+Perl                                15            581            631           2269
+SQL                                 16            235            349           1986
+DOS Batch                           51            399            627           1869
+PO File                              4            682           1954           1528
+XHTML                                5            232             79           1206
+Bourne Shell                        12            186            487           1167
+Python                               6            206             53            970
+Properties                          14             88            276            376
+C                                    5             52              7            260
+DTD                                  4             98            145            188
+Maven                                1              8              0            148
+XSD                                  3              6             42            148
+diff                                 1             57            296            146
+Ant                                  1            175            231            102
+Fortran 77                           6             13              0             45
+Windows Resource File                2              4              1             45
+YAML                                 1              8              2             27
+make                                 1              8              0             20
+Visual Basic                         1              0              0             16
+awk                                  1              1              6              6
+-----------------------------------------------------------------------------------
+SUM:                              5758         150401         312317         917360
+-----------------------------------------------------------------------------------
+                </code>
+            </pre>
+        </section>
+    </main>
 </div>
 </body>
 </html>

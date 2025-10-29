@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d63333e-f2dc-4a74-97fd-6967c9756ac9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/index.md" afterDir="false" />
+    <list default="true" id="9d63333e-f2dc-4a74-97fd-6967c9756ac9" name="Changes" comment="changed index look, fixed light mode look, removed silly image, stickied navbar">
+      <change afterPath="$PROJECT_DIR$/CVEReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tencryption.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wtjdabot.html" beforeDir="false" afterPath="$PROJECT_DIR$/wtjdabot.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,30 +41,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ryan/IdeaProjects/tenthdragon103.github.io/src&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/ryan/IdeaProjects/tenthdragon103.github.io",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;HTML&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "HTML"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ryan\IdeaProjects\tenthdragon103.github.io" />
       <recent name="C:\Users\ryan\IdeaProjects\tenthdragon103.github.io\src" />
     </key>
   </component>
@@ -176,7 +181,11 @@
       <workItem from="1742765202918" duration="445000" />
       <workItem from="1742868114177" duration="15307000" />
       <workItem from="1742935746076" duration="10000" />
-      <workItem from="1746057858855" duration="3105000" />
+      <workItem from="1746057858855" duration="3833000" />
+      <workItem from="1746066606761" duration="62000" />
+      <workItem from="1747693828889" duration="188000" />
+      <workItem from="1748645283594" duration="5124000" />
+      <workItem from="1761703316424" duration="9081000" />
     </task>
     <task id="LOCAL-00001" summary="base page">
       <option name="closed" value="true" />
@@ -242,7 +251,39 @@
       <option name="project" value="LOCAL" />
       <updated>1742884866787</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="convert index.html to main.html and create index.md for school project">
+      <option name="closed" value="true" />
+      <created>1746062216638</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1746062216639</updated>
+    </task>
+    <task id="LOCAL-00010" summary="remove cs project">
+      <option name="closed" value="true" />
+      <created>1747693912524</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1747693912524</updated>
+    </task>
+    <task id="LOCAL-00011" summary="rename">
+      <option name="closed" value="true" />
+      <created>1747694005834</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1747694005834</updated>
+    </task>
+    <task id="LOCAL-00012" summary="changed index look, fixed light mode look, removed silly image, stickied navbar">
+      <option name="closed" value="true" />
+      <created>1748649514420</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1748649514420</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,6 +297,10 @@
     <MESSAGE value="edited notice and about me and forgot to add image file" />
     <MESSAGE value="added darkmode toggle, new pages" />
     <MESSAGE value="images" />
-    <option name="LAST_COMMIT_MESSAGE" value="images" />
+    <MESSAGE value="convert index.html to main.html and create index.md for school project" />
+    <MESSAGE value="remove cs project" />
+    <MESSAGE value="rename" />
+    <MESSAGE value="changed index look, fixed light mode look, removed silly image, stickied navbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed index look, fixed light mode look, removed silly image, stickied navbar" />
   </component>
 </project>
